@@ -14,7 +14,7 @@ def checkif(a):
         for i in range(1,check-1):
             first = a%math.pow(10,i+2)//math.pow(10,i+1)
             second = a%math.pow(10,i+1)//math.pow(10,i)
-            if first-second != start: answer = False
+            if first-second != start: answer = False # 자릿수간 차가 start과 다르면 무조건 False
         return answer
 
 if __name__=="__main__":
@@ -22,5 +22,5 @@ if __name__=="__main__":
     list = [x for x in range(a+1)]
     answer = 0
     for i in list:
-        if checkif(i)==True: answer += 1
+        if checkif(i)==True: answer += 1 # True인 것만 개수에 더함
     print(answer)
