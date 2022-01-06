@@ -8,6 +8,8 @@ if __name__=="__main__":
         while True:
             if length<left*2+start: break
             else: 
+                temp_len = length
                 length -= (length-2*left)//start
-                left += 1; start += 1
+                start += 1
+                (temp_len-length)/start
         print(length)

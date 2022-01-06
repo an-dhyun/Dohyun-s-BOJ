@@ -6,7 +6,7 @@ if __name__=="__main__":
     for i in range(N):
         temp = int(nums.split()[i])
         check = True
-        for i in range(2, int(math.sqrt(temp))):
+        for i in range(2, int(math.sqrt(temp))+1):
             if temp%i==0: check = False
         if temp!=1 and check == True: list.append(temp)
     print(len(list))
