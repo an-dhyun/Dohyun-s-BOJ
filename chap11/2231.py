@@ -1,7 +1,7 @@
 if __name__=="__main__":
     N = int(input())
     
-    if len(str(N))<2: start = N
+    if len(str(N))<2: start = 0
     else: 
         start = 10**(len(str(N))-2)
     while True: 
